@@ -11,9 +11,9 @@
 **MitPick** is a program for linux based systems to capture a screenshot of the terminal without leaving the terminal.
 
 ### Features:
-- Take a screenshot of the terminal.
-- Copies it to clipboard
-- Easy installation
+📷 Take a screenshot of the terminal
+📝 Copies it to clipboard
+⚙️ Easy installation
 
 ### Where to get it?
 
