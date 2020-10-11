@@ -7,47 +7,37 @@
   <a href="https://lgtm.com/projects/g/Mithil467/mitpick/alerts/"><img alt="Total alerts" src="https://img.shields.io/lgtm/alerts/g/Mithil467/mitpick.svg?logo=lgtm&logoWidth=18"/></a>
 </p>
 
-### What is it?
 **MitPick** is a program for linux based systems to capture a screenshot of the terminal without leaving the terminal.
 
-### Features:
+## ✨ Main Features
 📷 Take a screenshot of the terminal  
 📝 Copies it to clipboard  
-⚙️ Easy installation  
 
-### Where to get it?
+## 🔧 Install
 
-Download the debian package from [releases](https://github.com/Mithil467/mitpick/releases/latest).  
-Execute the following from the directory where the package is downloaded (e.g. /home/mithil/Downloads)
-
-```sudo apt install ./mitpick_1.0-1.deb```
-
-### Dependencies
-
+Install the following prerequisites for your operating system.
+- CMake
+- C compiler
+- GTK3
 - [xdotool](https://github.com/jordansissel/xdotool)
 - [xclip](https://github.com/astrand/xclip)
 
-Dependencies are resolved automatically when installing the MitPick debian package.
-
-### How to install using meson and ninja?
-
-Clone the repo and from within the repo execute the following commands.
-
+Clone the repo and run -
 ```
-meson builddir
-cd builddir
-ninja install
+mkdir build
+cd build
+cmake ..
+sudo make install
 ```
 
-### How to compile from source code?
+## 📈 Usage
 
-You would need gtk3 development libraries for compiling the source.
+Upon installation, you can run `mitpick` in the terminal and it will capture the screenshot for the terminal window and copy it to clipboard.
 
-```
-gcc Main.c `pkg-config --cflags --libs gtk+-3.0` -o mitpick
-```
+## 💚 Contributing
 
-This will generate the executable binary ``mitpick`` in the same folder.
+We encourage you to contribute to Mitpick! Please check out the [Contributing Guidelines](CONTRIBUTING.md) about how to proceed.
 
-### License
-[GPL](LICENSE)
+## 📜 License
+
+Licensed under the GPL license.
